@@ -1,3 +1,4 @@
+<button class="button" style="vertical-align:middle"><span>Invite Bot</span></button>
 <!doctype html>
 <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,6 +29,45 @@
                 color: #555;
                 font-weight: 300;
             }
+            .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 40px;
+  width: 400px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
         </style>
     </head>
     
@@ -45,9 +85,14 @@
   <img class="mySlides" src="stophs.png" style="width:100%">
 </section>
     <body>
-         <button onclick="window.location.href = 'https://discordapp.com/oauth2/authorize?client_id=670835586524774422&scope=bot&permissions=0.';">Add to Discord</button>
+        <h2>Animated Button</h2>
+
+
+<a href="https://discordapp.com/oauth2/authorize?client_id=670835586524774422&scope=bot&permissions=0%22%3E
+<button class="button" style="vertical-align:middle"><span>Invite Bot</span></button>
+</a>
         <h1 class="fade-scroll">Speech Police</h1>
-         <button onclick="window.location.href = 'https://discordapp.com/oauth2/authorize?client_id=670835586524774422&scope=bot&permissions=0.';">Add to Discord</button>
+        
         <p class="fade-scroll">This body of text literally contains no information besides the fact that this text will fade as the page scrolls. We felt the need to make a website, but really have nothing to put on it. So now we're just trying to gimp out our website with weird features like this one.</p>
         
     </body>
