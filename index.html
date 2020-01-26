@@ -1,7 +1,4 @@
-<!doctype html>
-<html lang="en">
-    
-    <head>
+<html lang="en"><head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
         <meta charset="UTF-8">
@@ -19,12 +16,12 @@
                 font-size: 4em;
                 color: #fff;
                 background-color: #071d36;
-                padding: 300px 0 50px 100px;
-                margin-bottom: 150px;
+                padding: 300px 0 50px 0;
+                margin-bottom: 0;
             }
             p {
-                width: 30%;
-                margin: 0 auto 500px auto;
+                max-width: 800px;
+                margin: 0 auto 100px auto;
                 font-size: 1.4em;
                 color: #555;
                 font-weight: 300;
@@ -47,6 +44,69 @@
 .button span {
   cursor: pointer;
   display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+            body {
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <!-- Navigation -->
+
+    
+<body>
+    
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+   <a href="#about us" class="w3-button w3-bar-item">About Us</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+        <h1 class="fade-scroll" style="
+    margin-top: 0;
+">Speech Police</h1>
+        <a href="https://discordapp.com/oauth2/authorize?client_id=670835586524774422&amp;scope=bot&amp;permissions=0"><button class="button" style="vertical-align:middle;margin: 50px;"><span>Invite Bot</span></button></a>
+
+        <h2>Background</h2>
+<p>As gamers, we love the voice- and text-chat platform Discord, but it cannot be denied that toxicity and hate speech are prevalent. Automatic moderation for text channels is commonly seen in an attempt to keep the channels civilized, but to our knowledge, no bot is able to moderate channels with voice or speech. In the modern era of online gaming and streaming, it is more important than ever to be able to create a space for all to come together without needing to fear about constantly being attacked or harassed. We want to create an environment where everyone, regardless of their race, age, gender identity, and sexual orientation to celebrate the joys gaming can bring.</p>
+
+<h2>Usage Instructions</h2>
+<p>SpeechPolice can be summoned into a voice channel with !join and dismissed with !leave. When active, it listens to all users and detects toxicity and hate speech using machine learning, among other techniques. Upon detecting an infraction, it issues a warning to the offender and issues a ban after repeated offense.</p>
+        <!-- Slide Show -->
+    <section style="
+    max-width: 800px;
+    margin: auto;
+">
+      <img class="mySlides" src="voicechatmod.png" style="width:100%">
+      <img class="mySlides" src="sp octocat.png" style="width:100%">
+      <img class="mySlides" src="stophs.png" style="width:100%">
+    </section>
+        
+
+    
+ 
+<div id="dict" class="card-panel grey lighten-4"><div id="dict-inner"></div><img id="toktogi-lock" class="toktogi-icon" src="chrome-extension://domfinmkohodhgghgedfdcmonefafolm/images/unlock.png"></div><div id="toktogi-notification" class="card-panel grey lighten-4">Toktogi is on</div>
+</body></html>;
   position: relative;
   transition: 0.5s;
 }
